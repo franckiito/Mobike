@@ -13,3 +13,24 @@ def admin(request):
 
 def login(request):
     return render(request,'admin.html')
+
+def registro(request):
+    return render(request,'registro.html')
+
+def usuario(request):
+    return render(request,'usuario.html')
+    
+def arrendador(request):
+    return render(request,'arrendador.html')
+    
+def bicicleta(request):
+    return render(request,'bicicleta.html')
+
+def editar_perfil(request):
+    return render(request,'editarPerfil.html')
+
+def agregar_bicicleta(request):
+    return render(request,'agregarBicicleta.html')
+    
+def editar_bicicleta(request):
+    return render(request,'editarBicicleta.html')
