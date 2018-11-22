@@ -18,7 +18,7 @@
     <body>
         <header>
             <nav class="navbar navbar-expand-lg navbar-light bg-light naranjo">
-                <a class="navbar-brand" href="/admin"><img src="{% static "img/logo_mobike.PNG" %}" class="d-block w-100 rounded mx-auto img-fluid" alt="Logo"></a>
+                <a class="navbar-brand" href="#"><img src="{% static "img/logo_mobike.PNG" %}" class="d-block w-100 rounded mx-auto img-fluid" alt="Logo"></a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
@@ -57,7 +57,7 @@
                       </a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link" href="/admin/reportes/">
+                      <a class="nav-link" href="/admin/reportes">
                         Reportes
                       </a>
                     </li>
@@ -68,24 +68,20 @@
       
               <div class="col-md-10">
                 <br><br>
-                <h2>Mantenedor Bicicletas</h2>
+                <h2>Mantenedor Usuarios</h2>
                 <hr>
                 <h4>Filtros</h4>
                 <div class="panel-body">
                   <form role="form">
                       <div class="row">
                           <div class="form-group col-md-3">
-                              <input class="form-control" placeholder="Marca" name="email" type="Rut" autofocus="">
+                              <input class="form-control" placeholder="Rut" name="email" type="Rut" autofocus="">
                           </div>
                           <div class="form-group col-md-3">
                             <select class="custom-select mr-sm-2" id="inlineFormCustomSelect">
-                              <option selected>Tipo Bicicleta</option>
-                              <option value="1">Montaña</option>
-                              <option value="1">Ruta</option>
-                              <option value="1">Hibridas</option>
-                              <option value="1">Urbanas</option>
-                              <option value="2">Plegables</option>
-                              <option value="2">Mbx</option>
+                              <option selected>Tipo de usuario</option>
+                              <option value="1">Arrendador</option>
+                              <option value="1">Arendatario</option>
                           </select>
                           </div>
                           <div class="form-group col-md-4">
@@ -97,31 +93,35 @@
                 </div>
                 <hr>
                 <br>
-                <a class="btn btn-primary" href="/admin/bicicleta/agregar/">Agregar bicicleta</a>
+                <a class="btn btn-primary" href="/admin/usuario/agregar/">Agregar usuario</a>
                 <br><br>
                 <table class="table">
                     <thead>
                         <tr>
-                        <th scope="col">Fotografia</th>
-                        <th scope="col">Tipo</th>
-                        <th scope="col">Modelo</th>
-                        <th scope="col">Marca</th>
-                        <th scope="col">Color</th>
-                        <th scope="col">Ubicación</th>
+                        <th scope="col">Rut</th>
+                        <th scope="col">Nombres</th>
+                        <th scope="col">Apellidos</th>
+                        <th scope="col">Correo</th>
+                        <th scope="col">Sexo</th>
+                        <th scope="col">Edad</th>
+                        <th scope="col">Dirección</th>
+                        <th scope="col">Comuna</th>
                         <th scope="col">Estado</th>
                         <th scope="col">Acciones</th>
                         </tr>
                     </thead>
                     <tbody>
                         <tr>
-                        <th scope="row"><img class="d-block w-100 rounded mx-auto img-fluid" src="{% static "img/bicicleta.png" %}" alt=""></th>
-                        <td>Montaña</td>
-                        <td>Marlin 5</td>
-                        <td>Trek</td>
-                        <td>Negro</td>
-                        <td><a href="#">Ver</a></td>
-                        <td>Disponible</td>
-                        <td><a href="/admin/bicicleta/editar/">Editar</a> <a href="#">Deshabilitar</a> <a href="#">Habilitar</a> </td>
+                        <th scope="row">20138655-9</th>
+                        <td>Rodrigo Ignacio</td>
+                        <td>Asis Orellana</td>
+                        <td>r.asis@alumnos.duoc.cl</td>
+                        <td>Femenino</td>
+                        <td>19</td>
+                        <td>Dionisios #192</td>
+                        <td>Renca la lleva</td>
+                        <td>Habilitada</td>
+                        <td><a href="/admin/usuario/editar/">Editar</a> <a href="#">Deshabilitar</a> <a href="#">Habilitar</a> </td>
                         </tr>
                     </tbody>
                 </table>

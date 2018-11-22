@@ -34,3 +34,24 @@ def agregar_bicicleta(request):
     
 def editar_bicicleta(request):
     return render(request,'editarBicicleta.html')
+
+def admin_agregar_bicicleta(request):
+    return render(request,'agregarBicicleta1.html')
+    
+def admin_editar_bicicleta(request):
+    return render(request,'editarBicicleta1.html')
+
+def admin_usuario(request):
+    return render(request,'mantenedorUsuario.html')
+
+def admin_usuario_agregar(request):
+    return render(request,'agregarUsuario.html')
+
+def admin_usuario_editar(request):
+    return render(request,'editarUsuario.html')
+
+def reportes(request):
+    return render(request,'reportes.html')
+
+def user_login(request):
+    return render(request,'login.html')
